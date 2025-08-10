@@ -6,6 +6,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   slug: 'example-bottom-sheet-app',
   android: {
     package: 'example.bottom.sheet.app',
+    softwareKeyboardLayoutMode: 'pan',
   },
   ios: {
     bundleIdentifier: 'example.bottom.sheet.app',

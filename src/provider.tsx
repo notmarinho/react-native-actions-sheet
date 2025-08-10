@@ -74,7 +74,7 @@ export function SheetProvider({
 }) {
   const [, forceUpdate] = useReducer(x => x + 1, 0);
   const sheetIds = Object.keys(
-    sheetsRegistry[context] || sheetsRegistry['global'] || {},
+    sheetsRegistry[context] || sheetsRegistry.global || {},
   );
   const onRegister = React.useCallback(() => {
     // Rerender when a new sheet is added.

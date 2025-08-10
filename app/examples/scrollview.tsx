@@ -55,10 +55,12 @@ function ScrollViewSheet() {
   );
 
   return (
-    <ActionSheet gestureEnabled containerStyle={{
-      maxHeight:'100%',
-      height:'100%'
-    }}>
+    <ActionSheet
+      gestureEnabled
+      containerStyle={{
+        maxHeight: '100%',
+        height: '100%',
+      }}>
       <View
         style={{
           paddingHorizontal: 12,
@@ -66,7 +68,7 @@ function ScrollViewSheet() {
           paddingTop: 20,
           gap: 10,
           width: '100%',
-          height:'100%'
+          height: '100%',
         }}>
         <ScrollView
           style={{

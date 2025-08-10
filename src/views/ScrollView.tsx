@@ -1,8 +1,5 @@
 /* eslint-disable curly */
-import React, {
-  RefObject,
-  useImperativeHandle
-} from 'react';
+import React, {RefObject, useImperativeHandle} from 'react';
 import {
   Platform,
   ScrollView as RNScrollView,
@@ -12,7 +9,7 @@ import {
   NativeViewGestureHandlerProps,
   ScrollView as RNGHScrollView,
 } from 'react-native-gesture-handler';
-import { useScrollHandlers } from '../hooks/use-scroll-handlers';
+import {useScrollHandlers} from '../hooks/use-scroll-handlers';
 type Props = ScrollViewProps &
   Partial<NativeViewGestureHandlerProps> &
   React.RefAttributes<RNScrollView> & {
@@ -52,8 +49,6 @@ function $ScrollView(
     />
   );
 }
-
-
 
 export const ScrollView = React.forwardRef(
   $ScrollView,
