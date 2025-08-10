@@ -4,8 +4,13 @@
     "jsx": "react-native",
     "esModuleInterop": true,
     "paths": {
-      "react-native-actions-sheet": ["../"],
-      "react-native-actions-sheet/dist/src/views/FlashList": ["../dist/src/views/FlashList"]
+      "react-native-actions-sheet": [
+        "../"
+      ],
+      "react-native-actions-sheet/dist/src/views/FlashList": [
+        "../dist/src/views/FlashList"
+      ]
     }
-  }
+  },
+  "extends": "expo/tsconfig.base"
 }
